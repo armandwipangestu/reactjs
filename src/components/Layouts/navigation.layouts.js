@@ -1,11 +1,7 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHouseUser,
-  faImage,
-  faBook,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faImage, faBook } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../logo.svg";
 
 const Navigation = () => {
@@ -37,7 +33,7 @@ const Navigation = () => {
               })}
               className="me-5 nav-item"
             >
-              <FontAwesomeIcon icon={faHouseUser} className="me-2" />
+              <FontAwesomeIcon icon={faHouse} className="me-2" />
               Home
             </NavLink>
             <NavLink
