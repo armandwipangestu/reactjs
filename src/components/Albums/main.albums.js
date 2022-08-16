@@ -6,7 +6,7 @@ import Collection from "./collection.albums";
 const Albums = (props) => {
   return (
     <React.Fragment>
-      <Container className="mt-3">
+      <Container className="mt-5">
         <h3>{props.title}</h3>
         <p>{props.description}</p>
         <Collection />

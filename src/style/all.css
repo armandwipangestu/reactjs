@@ -35,3 +35,11 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
+
+#light {
+  /* background-color: #f3ebf6; */
+}
+
+#dark {
+  background-color: #484848;
+}

@@ -5,7 +5,7 @@ import Articles from "./article.posts";
 const Posts = (props) => {
   return (
     <React.Fragment>
-      <Container className="mt-4">
+      <Container className="mt-5">
         <h1>{props.title}</h1>
         <p>{props.description}</p>
         <Articles />

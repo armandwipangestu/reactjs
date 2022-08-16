@@ -43,7 +43,7 @@ const Articles = () => {
 
   return (
     <React.Fragment>
-      <Alert variant={"info"}>
+      <Alert variant={"info"} className="mb-5">
         <FontAwesomeIcon icon={faCircleExclamation} className="me-2" />
         Currently showing "{getLimit}" {getLimit > 1 && "posts"}{" "}
         {getLimit === 1 && "post"}

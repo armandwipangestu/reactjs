@@ -1,16 +1,14 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHouseUser,
-  faImage,
-  faBook,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faImage, faBook } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../logo.svg";
+import ReactSwitch from "react-switch";
 
-const Navigation = () => {
+const Navigation = ({ button }) => {
+  console.log(button);
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="light" variant="light" expand="lg">
       <Container>
         <Navbar.Brand href="/" className="me-5">
           <img
@@ -31,19 +29,19 @@ const Navigation = () => {
             <NavLink
               to="/"
               style={({ isActive }) => ({
-                color: isActive ? "#FFF" : "#6c757d",
+                color: isActive ? "#6c757d" : "#6c757d",
                 textDecoration: isActive ? "none" : "none",
                 padding: "3px",
               })}
               className="me-5 nav-item"
             >
-              <FontAwesomeIcon icon={faHouseUser} className="me-2" />
+              <FontAwesomeIcon icon={faHouse} className="me-2" />
               Home
             </NavLink>
             <NavLink
               to="albums"
               style={({ isActive }) => ({
-                color: isActive ? "#FFF" : "#6c757d",
+                color: isActive ? "#6c757d" : "#6c757d",
                 textDecoration: isActive ? "none" : "none",
                 padding: "3px",
               })}
@@ -55,7 +53,7 @@ const Navigation = () => {
             <NavLink
               to="posts"
               style={({ isActive }) => ({
-                color: isActive ? "#FFF" : "#6c757d",
+                color: isActive ? "#6c757d" : "#6c757d",
                 textDecoration: isActive ? "none" : "none",
                 padding: "3px",
               })}
@@ -64,6 +62,7 @@ const Navigation = () => {
               <FontAwesomeIcon icon={faBook} className="me-2" />
               Posts
             </NavLink>
+            {button}
           </Nav>
         </Navbar.Collapse>
       </Container>
