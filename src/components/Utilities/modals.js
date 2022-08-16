@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import { createPortal } from "react-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const CenteredModal = ({ children, activator }) => {
   const [show, setShow] = useState(false);
@@ -13,11 +15,11 @@ const CenteredModal = ({ children, activator }) => {
             {children}
             <hr />
             <button
-              className="btn btn-outline-primary"
+              className="btn btn-outline-danger"
               type="button"
               onClick={() => setShow(false)}
             >
-              Close
+              <FontAwesomeIcon icon={faXmark} />
             </button>
           </div>
         </div>

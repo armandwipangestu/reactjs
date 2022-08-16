@@ -8,8 +8,6 @@ import NotFound from "./components/NotFound/main.notfound";
 import Home from "./components/Home/main.home";
 import Navigation from "./components/Layouts/navigation.layouts";
 import Footer from "./components/Layouts/footer.layouts";
-import "./style/all.css";
-import "./style/modal.css";
 
 const App = () => {
   return (

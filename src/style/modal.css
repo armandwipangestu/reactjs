@@ -13,11 +13,42 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.modal-body {
-  padding: 1.25rem 1.5rem;
-  border-radius: 4px;
-  background-color: white;
-  width: 50vh;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .modal-body {
+    padding: 1.25rem 1.5rem;
+    border-radius: 4px;
+    background-color: white;
+    width: 40vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .modal-body {
+    padding: 1.25rem 1.5rem;
+    border-radius: 4px;
+    background-color: white;
+    width: 160vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .modal-body {
+    padding: 1.25rem 1.5rem;
+    border-radius: 4px;
+    background-color: white;
+    width: 100vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
 
 /* Overlay Transitions */

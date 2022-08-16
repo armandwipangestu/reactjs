@@ -65,14 +65,14 @@ const Articles = () => {
                       </button>
                     )}
                   >
-                    <h1>Post ID: {data.id}</h1>
+                    <h3>Post ID: {data.id}</h3>
+                    <strong>User ID</strong>: {data.userId}
                     <hr />
                     <p>
                       <strong>Title</strong>: {data.title}
                       <br />
                       <br />
                       <strong>Description</strong>: {data.body}
-                      {/* <strong>Posted by</strong>: {data.userId} */}
                     </p>
                   </CenteredModal>
                 </Card.Body>
