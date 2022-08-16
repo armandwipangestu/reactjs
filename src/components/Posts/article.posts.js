@@ -86,12 +86,12 @@ const Articles = () => {
             onClick={() => handleLimit("+")}
           >
             <FontAwesomeIcon icon={faPlus} className="me-2" />
-            Tambah Post
+            Add Post
           </button>
           {getLimit > 1 && (
             <button className="btn btn-danger" onClick={() => handleLimit("-")}>
               <FontAwesomeIcon icon={faTrashCan} className="me-2" />
-              Hapus Post
+              Remove Post
             </button>
           )}
         </div>
